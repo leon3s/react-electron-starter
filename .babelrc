@@ -1,0 +1,43 @@
+{
+  "presets": [
+    ["env", {
+      "targets": { "node": 7 },
+      "useBuiltIns": true
+    }],
+    "stage-0",
+    "react"
+  ],
+  "plugins": [
+    "add-module-exports",
+    "dynamic-import-webpack",
+    ["transform-runtime"],
+    ["module-resolver", {
+      "alias": {
+        "@speech": "./app",
+        "~shared": "./app/shared",
+        "~components": "./app/components",
+        "~containers": "./app/containers",
+        "~actions": "./app/actions",
+        "~reducers": "./app/reducers",
+        "~utils": "./app/utils",
+        "~effects": "./app.effects",
+        "~style": "./app/style",
+        "~store": "./app/store",
+        "react-native": "react-native-web"
+      }
+    }],
+    "react-native-web"
+  ],
+  "env": {
+    "production": {
+      "presets": ["react-optimize"],
+      "plugins": ["dev-expression"]
+    },
+    "development": {
+      "plugins": [
+        "transform-class-properties",
+        "transform-es2015-classes"
+      ]
+    }
+  }
+}

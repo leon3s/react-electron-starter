@@ -1,0 +1,25 @@
+{
+  "name": "electron-react-native-web",
+  "productName": "electron-react-native-web",
+  "version": "1.0.0",
+  "description": "electron-react-native-web starter",
+  "main": "./main.prod.js",
+  "author": {
+    "name": "leone",
+    "url": "https://github.com/leon3s"
+  },
+  "wcjs-prebuilt": {
+    "arch": "x64",
+    "platform": "win",
+    "runtime": "electron",
+    "runtimeVersion": "v1.4.3",
+    "version": "v0.2.7"
+  },
+  "scripts": {
+    "electron-rebuild": "node -r babel-register ../internals/scripts/ElectronRebuild.js",
+    "postinstall": "npm run electron-rebuild"
+  },
+  "license": "MIT",
+  "dependencies": {
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "settings",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "icon": {
+    "path":"static/icon.png",
+    "width": 100,
+    "height": 100
+  },
+  "author": "",
+  "license": "ISC"
+}
